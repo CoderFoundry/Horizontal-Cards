@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Poster Cards-DEMO</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/site.css">
+    <link rel="stylesheet" href="https://use.typekit.net/lfa5msk.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="modal fade" tabindex="-1" role="dialog" id="posterModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="comicTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img id="comicImg" class="img-fluid" src=""></img>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layout">
+        <h3 class="posterView">All Time Great Spidey Covers</h3>
+        <div class="row">
+            <div class="col-md-6 posterView">
+                <div class="posterCard h-100">
+                    <div class="image">
+                        <img class="img-fluid" src="Amazing50.jpg"
+                            onclick="showPoster('Amazing Spider-Man #50','Amazing50.jpg')">
+                    </div>
+                    <div class="content h-100">
+                        <div class="title">Amazing Spider-Man #50</div>
+                        <p class="overview">Peter becomes frustrated with his life
+                            and decides to throw away his Spider-Man outfit and quit being Spider-Man.
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <a href="" class="navbtn">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 posterView">
+                <div class="posterCard h-100 item">
+                    <div class="image">
+                        <img class="img-fluid" src="Amazing67.jpg" alt="Amazing Spider-Man #67"
+                            onclick="showPoster('Amazing Spider-Man #67','Amazing67.jpg')">
+                    </div>
+                    <div class="content h-100">
+                        <div class="title">Amazing Spider-Man #67</div>
+                        <p class="overview">Mysterio has miniaturized Spider-Man and placed him in a tiny amusement
+                            park. Can Spider-Man survive this deadly Hall of Mirrors? Mysterio has miniaturized
+                            Spider-Man and placed him in a tiny amusement park.</p>
+                    </div>
+                    <div class="footer">
+                        <a href="" class="navbtn">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 posterView">
+                <div class="posterCard h-100">
+                    <div class="image ">
+                        <img class="img-fluid" src="Amazing39.jpg"
+                            onclick="showPoster('Amazing Spider-Man #39','Amazing39.jpg')">
+                    </div>
+                    <div class="content h-100">
+                        <div class="title">Amazing Spider-Man #39</div>
+                        <p class="overview">The Green Goblin knows how to take down Spider-Man once and for all.
+                            Unfortunately, the villain's plan may reveal Spider-Man's secret identity! The masks
+                            come
+                            off in this shocking issue!
+                        </p>
+                    </div>
+                    <div class="footer">
+                        <a href="" class="navbtn">More Info</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 posterView">
+                <div class="posterCard h-100 item">
+                    <div class="image">
+                        <img class="img-fluid" src="Amazing150.jpg" alt="..."
+                            onclick="showPoster('Amazing Spider-Man #150','Amazing150.jpg')" />
+                    </div>
+                    <div class="content h-100">
+                        <div class="title">Amazing Spider-Man #150</div>
+                        <p class="overview">Following his battle with Jackal and a Spider-Clone, Spider-Man
+                            questions
+                            whether he is the real web-slinger or a clone injected with memories. Spidey seeks the
+                            help
+                            of Dr. Curt Connors, but before the results are revealed, Spencer Smythe arrives on the
+                            scene with new Spider-Slayer weaponry!</p>
+                    </div>
+                    <div class="footer">
+                        <a href="" class="navbtn">More Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script type="text/javascript">
+        function showPoster(comicTitle, comicImage) {
+            $('#comicTitle').text(comicTitle)
+            $('#comicImg').attr("src", comicImage);
+            $('#posterModal').modal('show');
+        }
+    </script>
+</body>
+
+</html>

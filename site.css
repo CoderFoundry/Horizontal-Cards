@@ -1,0 +1,214 @@
+body {
+    background: rgba(138, 214, 245, 1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(138, 214, 245, 1) 0%, rgba(35, 162, 225, 1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(138, 214, 245, 1)), color-stop(100%, rgba(35, 162, 225, 1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(138, 214, 245, 1) 0%, rgba(35, 162, 225, 1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(138, 214, 245, 1) 0%, rgba(35, 162, 225, 1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(138, 214, 245, 1) 0%, rgba(35, 162, 225, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(138, 214, 245, 1) 0%, rgba(35, 162, 225, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8ad6f5', endColorstr='#23a2e1', GradientType=1);
+}
+
+.layout {
+    width: 100%;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.posterCard {
+    position: relative;
+    background-color: #ddd;
+    display: inline-block;
+    border: 2px solid #ddd;
+    margin-bottom: -.5em;
+    -webkit-box-shadow: 10px 10px 9px 0px rgb(77, 76, 77);
+    -moz-box-shadow: 10px 10px 9px 0px rgba(77, 76, 77, 1);
+    box-shadow: 10px 10px 9px 0px rgba(77, 76, 77, 1);
+}
+
+.posterView {
+    color: #ddd;
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+H3.posterView {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: yellow;
+    padding-top: 1em;
+    padding-left: .0em;
+    padding-right: 1em;
+}
+
+.image {
+    float: left;
+    background: rgb(0, 0, 0);
+    /* Animation */
+    width: 25%;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.image:hover {
+    opacity: .7;
+    cursor: pointer;
+    box-shadow: 0 0 7px #ffee10;
+    text-shadow: 0 0 7px #ffee10;
+    mix-blend-mode: darken;
+}
+
+.content {
+    float: left;
+    width: 75%;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-height: 4.5em;
+    padding-left: .5em;
+    padding-top: 0em;
+    padding-right: .5em;
+
+}
+
+.content h4 {
+    margin: 5px 0;
+}
+
+.title {
+    font-size: .7em;
+    font-weight: bold;
+    color: BLACK;
+}
+
+p.overview {
+    word-wrap: break-word;
+    white-space: normal;
+    color: #4d4d4d;
+    font-size: 0.7em;
+    line-height: 1em;
+}
+
+.footer {
+    background-color: rgb(41, 41, 41);
+    position: absolute;
+    bottom: 0;
+    width: 75.5%;
+    left: 25%;
+    font-size: .5em;
+    padding-top: .25em;
+    padding-bottom: 0em;
+    padding-right: 0em;
+    padding-left: .5em;
+    margin-bottom: -.3em;
+    margin-right: 5em;
+
+}
+
+a.navbtn:hover {
+    color: yellow;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+a.navbtn {
+    font-family: ccbiffbamboom, sans-serif;
+    font-weight: 100;
+    font-kerning: normal;
+    font-style: normal;
+    font-size: 1em;
+    color: yellow;
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .content {
+        -webkit-line-clamp: 5;
+        max-height: 6em;
+    }
+
+    .title {
+        font-size: .9em;
+        font-weight: bold;
+    }
+
+
+    p.overview {
+        font-size: 0.9em;
+    }
+
+    H3.posterView {
+        font-size: 2em;
+    }
+
+    .footer {
+        width: 75.5%;
+        left: 25%;
+        font-size: .9em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: -.15em;
+    }
+
+    a.navbtn {
+        font-size: 1em;
+    }
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    .content {
+        -webkit-line-clamp: 20;
+        max-height: 20em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    H3.posterView {
+        font-size: 2em;
+    }
+
+    p.overview {
+        word-wrap: break-word;
+        white-space: normal;
+        color: #4d4d4d;
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .footer {
+        width: 75.5%;
+        left: 25%;
+        font-size: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        margin-bottom: -.15em;
+    }
+
+    a.navbtn {
+        font-size: 1em;
+    }
+
+
+}
